@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="30dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Password"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtoldPass"
+                    android:inputType="textPassword"
+                    android:hint="Enter Old Password"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/lock"
+                    android:padding="10dp"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="25dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtNewPass"
+                    android:inputType="textPassword"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/lock"
+                    android:padding="10dp"
+                    android:drawablePadding="8dp"
+                    android:hint="Enter New Password"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSave"
+                    android:text="Set Password"
+                    android:layout_margin="25dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

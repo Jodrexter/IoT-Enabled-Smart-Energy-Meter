@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="30dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add User"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtUName"
+                    android:inputType="text"
+                    android:hint="Enter Full Name"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="25dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtUMobile"
+                    android:inputType="phone"
+                    android:hint="Enter Mobile Number"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="15dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtUEmail"
+                    android:inputType="textEmailAddress"
+                    android:hint="Enter Email"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="15dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtUDeviceNo"
+                    android:inputType="text"
+                    android:hint="Enter Device Number"
+                    android:background="@drawable/custom_edittext"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="8dp"
+                    android:layout_marginTop="15dp"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSubmit"
+                    android:layout_margin="30dp"
+                    android:text="Submit"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

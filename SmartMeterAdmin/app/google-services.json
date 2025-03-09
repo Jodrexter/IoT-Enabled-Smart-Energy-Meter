@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "961374836741",
+    "firebase_url": "https://smart-home-c7d73-default-rtdb.firebaseio.com",
+    "project_id": "smart-home-c7d73",
+    "storage_bucket": "smart-home-c7d73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961374836741:android:b34a4d93ab4dec814e646c",
+        "android_client_info": {
+          "package_name": "com.example.smartmeter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwxKucftJPnrWZOFkGldSK7GFIxsVm3Ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961374836741:android:e40e5b18627dc88a4e646c",
+        "android_client_info": {
+          "package_name": "com.example.smartmeteradmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwxKucftJPnrWZOFkGldSK7GFIxsVm3Ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

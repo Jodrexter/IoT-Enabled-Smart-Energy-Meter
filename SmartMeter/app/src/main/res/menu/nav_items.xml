@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/nav_control"
+        android:title="Control"
+        android:icon="@drawable/controller"/>
+<!--    <item-->
+<!--        android:id="@+id/nav_monitor"-->
+<!--        android:title="Monitor"-->
+<!--        android:icon="@drawable/monitor"/>-->
+    <item
+        android:id="@+id/nav_setemail"
+        android:title="Recharge"
+        android:icon="@drawable/recharge"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"/>
+
+</menu>

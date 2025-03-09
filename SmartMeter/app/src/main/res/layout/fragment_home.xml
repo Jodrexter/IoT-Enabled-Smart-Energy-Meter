@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:orientation="vertical">
+
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingLeft="25dp"-->
+<!--        android:paddingRight="25dp"-->
+<!--        android:paddingTop="25dp"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/txvheadThemp"-->
+<!--            android:text="Temperature"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_weight="1"/>-->
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/txvheadHumid"-->
+<!--            android:text="Humidity"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:layout_weight="1"/>-->
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardUseCompatPadding="true"-->
+<!--            app:cardElevation="15dp"-->
+<!--            android:layout_weight="1">-->
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/txvTemp"-->
+<!--                android:textSize="25sp"-->
+<!--                android:padding="12dp"-->
+<!--                android:drawablePadding="8dp"-->
+<!--                android:drawableLeft="@drawable/temp"/>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardCornerRadius="10dp"-->
+<!--            app:cardUseCompatPadding="true"-->
+<!--            android:layout_weight="1"-->
+<!--            app:cardElevation="15dp">-->
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/txvHumid"-->
+<!--                android:textSize="25sp"-->
+<!--                android:padding="12dp"-->
+<!--                android:drawablePadding="8dp"-->
+<!--                android:drawableLeft="@drawable/temp"/>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="10dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Voltage"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Current"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txvVoltage"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:drawableLeft="@drawable/voltage"
+                        android:drawablePadding="8dp"
+                        android:textSize="25sp"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                    />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txvCurrent"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:drawableLeft="@drawable/voltage"
+                        android:drawablePadding="8dp"
+                        android:textSize="25sp"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="10dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="Current Watt"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txvCurrentWatt"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:drawableLeft="@drawable/monitor"
+                android:drawablePadding="8dp"
+                android:textSize="25sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="10dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Watt"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Units"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txvWatt"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:drawableLeft="@drawable/temp"
+                        android:drawablePadding="8dp"
+                        android:textSize="25sp"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txvUnits"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:drawableLeft="@drawable/temp"
+                        android:drawablePadding="8dp"
+                        android:textSize="25sp"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="15dp"
+        android:layout_margin="10dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Electicity Expense"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:layout_margin="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalExpense"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:drawableLeft="@drawable/rupee"
+                android:padding="10dp"
+                android:drawablePadding="8dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
