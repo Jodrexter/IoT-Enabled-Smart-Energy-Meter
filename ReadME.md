@@ -81,7 +81,7 @@ cd mobile-app
 
 ## 📝 Contribution Guidelines
 
-🚀 Want to contribute? Follow these steps:
+🚀 Want to contribute? Then Follow these steps:
 
 1. **Fork** the repository.
 2. Create a **new branch** (`feature-branch`):
