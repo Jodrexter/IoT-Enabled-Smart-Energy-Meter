@@ -18,7 +18,7 @@ The **IoT-Enabled Smart Power Meter** is a system designed to revolutionize ener
 - **Hardware**: NodeMCU (ESP8266/ESP32), Relay Module, Power Supply, Jumper Wires
 - **Database**: Firebase Realtime Database
 - **Frontend**: Android Application (for user monitoring and control)
-- **Backend**: Python/Node.js (if additional server-side processing is needed)
+- **Backend**: Java
 - **Communication Protocol**: Wi-Fi for IoT connectivity
 
 ## 🛠️ Setup Instructions
